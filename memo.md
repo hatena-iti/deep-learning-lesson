@@ -50,6 +50,11 @@
 * https://qiita.com/taki_tflare/items/42a40119d3d8e622edd2
   * 機械学習関連の用語の理解に役立つだろう。
 
+* https://paiza.jp/works/ai_ml/primer/m1-challenge1
+  * paiza ラーニングのオンライン講座「Python×AI・機械学習入門編」
+  * 2018年12月現在、一部が無料で公開されている。
+
+
 ## 必要となるプログラム言語
 
 * Python
@@ -95,10 +100,16 @@
 ## 学習のステップ
 
 1. Google Cloud Vision を使って、画像解析を試す。
-    * 機械学習の「推論」部分のみをまず体験する。　
+    * 機械学習の「推論」部分のみをまず体験する。
+    * たとえば、ウェブページ上で画像ファイルをアップロードして、その画像の解析結果を同じページ上に表示する、ようなウェブアプリケーションの作成を想定。
 　
 1. Google Cloud AutoML を使って、モデル作成。
     * ウェブサービスを利用することで、機械学習の「学習」と「推論」を、プログラムのソースコーディングを最小限として体験する。
+      * Cloud AutoML はベータ版（アルファ版？）とのことで、まだ不安定なツールではあるようだが、ソースコーディングを伴わずに機械学習の仕組みを体験してみる用途としては、適切であろうと考える。
+    * こちらの説明にしたがい、操作してみる。
+      * https://cloud.google.com/vision/automl/docs/quickstart
+    * 参考
+      * https://www.apps-gcp.com/cloud-automl-vision/
 　
 1. Keras を使って、モデル作成
     * Python、Keras の環境構築
