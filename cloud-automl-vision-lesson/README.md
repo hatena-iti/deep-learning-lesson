@@ -32,14 +32,14 @@ Google Cloud Platform に **Google Cloud Storage Cloud AutoML API** と **Google
 
   ![](./capture/05-01.png)
 
-以下のような画面が表示されるので、"**Cloud AutoML Lesson**" プロジェクトを選択して **続行** をクリック。
+以下のような画面が表示されるので、"**Cloud AutoML Lesson**" プロジェクトを選択して **続行** をクリック。
 
   ![](./capture/05.png)
 
 
 ## Cloud Storage バケットの作成
 
-クイックスタートでは **Cloud Shell**（ GCP Console プロジェクトに接続されたブラウザベースの Linux コマンドライン、とのこと。ブラウザ上にターミナルのビューを開いて、Google Cloud の設定などの各種操作をコマンドで行える、というもの）から、以下のコマンドを実行、という手順だったが、
+クイックスタートでは **Cloud Shell**（ GCP Console プロジェクトに接続されたブラウザベースの Linux コマンドライン、とのこと。ブラウザ上にターミナルのビューを開いて、Google Cloud の設定などの各種操作をコマンドで行える、というもの）から、以下のコマンドを実行、という手順だったが、
 ```
 PROJECT=$(gcloud config get-value project) && BUCKET="${PROJECT}-vcm"
 ```
@@ -98,10 +98,9 @@ gsutil -m cp -R gs://cloud-ml-data/img/flower_photos/ gs://cloud-automl-lesson-v
 
 ## CSV ファイルを更新して、自分のバケット内のファイルを指すように調整
 
-Cloud Shell のビューから以下を入力する。
+Cloud Shell のビューから以下を入力する。（実際には 1行で）
 ```
-gsutil cat gs://cloud-automl-lesson-vcm/img/flower_photos/all_data.csv | 
-sed "s:cloud-ml-data:cloud-automl-lesson-vcm:" > all_data.csv
+gsutil cat gs://cloud-automl-lesson-vcm/img/flower_photos/all_data.csv | sed "s:cloud-ml-data:cloud-automl-lesson-vcm:" > all_data.csv
 ```
 
 ## バケットに CSV ファイルをコピー
@@ -141,7 +140,7 @@ gs://cloud-automl-lesson-vcm/img/flower_photos/roses/15104537437_f6730b38c3_n.jp
 gs://cloud-automl-lesson-vcm/img/flower_photos/roses/15172358234_28706749a5.jpg,roses
 ・・・
 ```
-独自に画像ファイルを用意して、それに対応する、このような CSV ファイルを合わせて作成すれば、独自の学習用データを用意できる、ということになるだろう。
+独自に画像ファイルを用意して、それに対応する、このような CSV ファイルを合わせて作成すれば、独自の学習用データを用意できる、ということになるだろう。
 
 ## AutoML Vision ウェブサイトにアクセス
 
@@ -193,7 +192,7 @@ gs://cloud-automl-lesson-vcm/img/flower_photos/roses/15172358234_28706749a5.jpg,
 
 ## 推測
 
-**PREDICT** タブでは、学習結果のモデルを利用して、任意の画像ファイルがどのようにラベル付けされるか、その推測の機能を試すことができる。
+**PREDICT** タブでは、学習結果のモデルを利用して、任意の画像ファイルがどのようにラベル付けされるか、その推測の機能を試すことができる。
 
   ![](./capture/31.png)
 
