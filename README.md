@@ -104,7 +104,7 @@
     * たとえば、ウェブページ上で画像ファイルをアップロードして、その画像の解析結果を同じページ上に表示する、ようなウェブアプリケーションの作成を想定。
     * アプリのサンプルはこちら
       * https://github.com/hatena-iti/sample-Cloud-Vision-API
-      * 当アプリを動かすには、 API KEY をアプリの画面上から設定する必要がある。（ TODO: API KEY の管理方法）
+      * 当アプリを動かすには、 API KEY をアプリの画面上から設定する必要がある。（ TODO: API KEY の管理方法）
     * 参考
       * https://cloud.google.com/vision/
 　
