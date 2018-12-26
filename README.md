@@ -116,7 +116,7 @@
       * https://cloud.google.com/vision/automl/docs/quickstart
       * ただこのチュートリアルは非常に時間がかかるので、もう少し小さいデータセットを用意して、簡易的な学習を行う形にするのがいいのではないか。
     * 実際の "Cloud AutoML Vision 試してみた" メモはこちら
-      * https://github.com/hatena-iti/deep-learning-lesson/cloud-automl-vision-lesson/README.md
+      * [./cloud-automl-vision-lesson/README.md](./cloud-automl-vision-lesson/README.md)
     * 参考
       * https://www.apps-gcp.com/cloud-automl-vision/
 　
