@@ -26,19 +26,27 @@ Google Cloud コンソールを開く
 
 プロジェクト ID は "**cloud-automl-lesson**" となる。
 
-　![](./capture/03.png)
+||
+|:------|
+|![](./capture/03.png)|
 
 プロジェクトに対して課金が有効になっていることを確認（コンソール画面の **お支払い** メニューから）
 
-　![](./capture/04.png)
+||
+|:------|
+|![](./capture/04.png)|
 
 Google Cloud Platform に **Google Cloud Storage Cloud AutoML API** と **Google Cloud Storage JSON API** のアプリケーションを登録（クイックスタートページの **ENABLE THE APIS** ボタンをクリック。クイックスタートを利用しない場合はどのような手順になるか？？？）
 
-  ![](./capture/05-01.png)
+||
+|:------|
+|![](./capture/05-01.png)|
 
 以下のような画面が表示されるので、"**Cloud AutoML Lesson**" プロジェクトを選択して **続行** をクリック。
 
-  ![](./capture/05.png)
+||
+|:------|
+|![](./capture/05.png)|
 
 
 ## Cloud Storage バケットの作成
@@ -54,25 +62,35 @@ gsutil mb -p ${PROJECT} -c regional -l us-central1 gs://${BUCKET}
 
 **Storage** メニューから "**ブラウザ**" を選択して、
 
-  ![](./capture/08.png)
+||
+|:------|
+|![](./capture/08.png)|
 
 **バケットを作成** をクリック。
 
-  ![](./capture/09.png)
+||
+|:------|
+|![](./capture/09.png)|
 
 バケット名は "**cloud-automl-lesson-vcm**" とする。
 
-  ![](./capture/14.png)
+||
+|:------|
+|![](./capture/14.png)|
 
 ## AutoML Vision サービス アカウントの権限の追加
 
 Google Cloud のコンソール画面に Cloud Shell のビューを表示する。画面右上のボタンをクリックする。
 
-  ![](./capture/15-01.png)
+||
+|:------|
+![](./capture/15-01.png)|
 
 以下のようなビューがページ下部に表示される。
 
-  ![](./capture/06.png)
+||
+|:------|
+![](./capture/06.png)|
 
 この Cloud Shell のビューから以下を入力する。
 ```
@@ -116,15 +134,21 @@ gsutil cp all_data.csv gs://cloud-automl-lesson-vcm/csv/
 
 コマンド実行完了後、コンソール画面では以下のように表示される。
 
-  ![](./capture/17.png)
+||
+|:------|
+![](./capture/17.png)|
 
 **img** ディレクトリは以下のようになっている。
 
-  ![](./capture/18.png)
+||
+|:------|
+![](./capture/18.png)|
 
 **csv** ディレクトリには all_data.csv が配置されている状態となる。
 
-  ![](./capture/19.png)
+||
+|:------|
+![](./capture/19.png)|
 
 この CSV ファイルの中身は、以下のように、ファイル名とそのラベルを設定したものである。
 ```
@@ -154,37 +178,53 @@ gs://cloud-automl-lesson-vcm/img/flower_photos/roses/15172358234_28706749a5.jpg,
 
 **Cloud AutoML Lesson** プロジェクトの ID を選択する。
 
-  ![](./capture/20.png)
+||
+|:------|
+![](./capture/20.png)|
 
 以下のようなエラーメッセージが表示される場合は、**SET UP NOW** をクリックするとよい。
 
-  ![](./capture/21.png)
+||
+|:------|
+![](./capture/21.png)|
 
 ## データセットを作成
 
 **NEW DATASET** をクリックして、新しいデータセット（学習結果が格納されるもの）を作成する。
 
-  ![](./capture/22.png)
+||
+|:------|
+![](./capture/22.png)|
 
 データセット名を指定して、CSV ファイルのところに、先ほど配置した **all_data.csv** ファイルを、フルパスで指定する。
 
-  ![](./capture/24.png)
+||
+|:------|
+![](./capture/24.png)|
 
 **CREATE DATASET** クリックののち、元データの読み込みがはじまる。
 
-  ![](./capture/25.png)
+||
+|:------|
+![](./capture/25.png)|
 
 読み込み完了の状態。
 
-  ![](./capture/26.png)
+||
+|:------|
+![](./capture/26.png)|
 
 ## トレーニング（学習）開始
 
 **TRAIN** タブをクリックし、**START TRAINING** をクリックする。
 
-  ![](./capture/27.png)
+||
+|:------|
+![](./capture/27.png)|
 
-  ![](./capture/28.png)
+||
+|:------|
+![](./capture/28.png)|
 
   * これもまあまあ時間がかかる。
 
@@ -192,14 +232,20 @@ gs://cloud-automl-lesson-vcm/img/flower_photos/roses/15172358234_28706749a5.jpg,
 
 学習完了後、**EVALUATE** タブをクリックして、その結果を確認することができる。
 
-  ![](./capture/30.png)
+||
+|:------|
+![](./capture/30.png)|
 
 ## 推測
 
 **PREDICT** タブでは、学習結果のモデルを利用して、任意の画像ファイルがどのようにラベル付けされるか、その推測の機能を試すことができる。
 
-  ![](./capture/31.png)
+||
+|:------|
+![](./capture/31.png)|
 
-  ![](./capture/32.png)
+||
+|:------|
+![](./capture/32.png)|
 
 また この学習済みモデルでの推測処理は、REST API からも呼び出すことが可能である。＝＞ TODO
