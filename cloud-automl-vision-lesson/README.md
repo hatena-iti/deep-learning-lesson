@@ -14,19 +14,22 @@ Google Cloud コンソールを開く
 
 コンソール画面から "**プロジェクトを作成**" をクリックして、
 
-  ![](./capture/01.png)
+|||
+|:------|:------|
+||![](./capture/01.png)|
+|||
 
 "**Cloud AutoML Lesson**" という名前のプロジェクトを新規作成
 
-  ![](./capture/02.png)
+　![](./capture/02.png)
 
 プロジェクト ID は "**cloud-automl-lesson**" となる。
 
-  ![](./capture/03.png)
+　![](./capture/03.png)
 
 プロジェクトに対して課金が有効になっていることを確認（コンソール画面の **お支払い** メニューから）
 
-  ![](./capture/04.png)
+　![](./capture/04.png)
 
 Google Cloud Platform に **Google Cloud Storage Cloud AutoML API** と **Google Cloud Storage JSON API** のアプリケーションを登録（クイックスタートページの **ENABLE THE APIS** ボタンをクリック。クイックスタートを利用しない場合はどのような手順になるか？？？）
 
