@@ -36,13 +36,13 @@ Google Cloud コンソールを開く
 |:------|
 |![](./capture/04.png)|
 
-Google Cloud Platform に **Google Cloud Storage Cloud AutoML API** と **Google Cloud Storage JSON API** のアプリケーションを登録（クイックスタートページの **ENABLE THE APIS** ボタンをクリック。クイックスタートを利用しない場合はどのような手順になるか？？？）
+Google Cloud Platform に **Google Cloud Storage Cloud AutoML API** と **Google Cloud Storage JSON API** のアプリケーションを登録（クイックスタートページの **ENABLE THE APIS** ボタンをクリック。TODO：クイックスタートを利用しない場合はどのような手順になるか？？？）
 
 ||
 |:------|
 |![](./capture/05-01.png)|
 
-以下のような画面が表示されるので、"**Cloud AutoML Lesson**" プロジェクトを選択して **続行** をクリック。
+以下のような画面が表示されるので、"**Cloud AutoML Lesson**" プロジェクトを選択して **続行** をクリック。
 
 ||
 |:------|
@@ -80,7 +80,7 @@ gsutil mb -p ${PROJECT} -c regional -l us-central1 gs://${BUCKET}
 
 ## AutoML Vision サービス アカウントの権限の追加
 
-Google Cloud のコンソール画面に Cloud Shell のビューを表示する。画面右上のボタンをクリックする。
+Google Cloud のコンソール画面に Cloud Shell のビューを表示する。画面右上のボタンをクリックする。
 
 ||
 |:------|
@@ -168,7 +168,7 @@ gs://cloud-automl-lesson-vcm/img/flower_photos/roses/15104537437_f6730b38c3_n.jp
 gs://cloud-automl-lesson-vcm/img/flower_photos/roses/15172358234_28706749a5.jpg,roses
 ・・・
 ```
-独自に画像ファイルを用意して、それに対応する、このような CSV ファイルを合わせて作成すれば、独自の学習用データを用意できる、ということになるだろう。
+独自に画像ファイルを用意して、それに対応する、このような CSV ファイルを合わせて作成すれば、独自の学習用データを用意できる、ということになるだろう。（どちらかというとこのパターンを試してみたい。）
 
 ## AutoML Vision ウェブサイトにアクセス
 
@@ -182,7 +182,7 @@ gs://cloud-automl-lesson-vcm/img/flower_photos/roses/15172358234_28706749a5.jpg,
 |:------|
 ![](./capture/20.png)|
 
-以下のようなエラーメッセージが表示される場合は、**SET UP NOW** をクリックするとよい。
+以下のようなエラーメッセージが表示される場合は、（権限設定などが適切に行われていない、ということらしいので） **SET UP NOW** をクリックするとよい。
 
 ||
 |:------|
