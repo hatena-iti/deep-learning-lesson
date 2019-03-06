@@ -176,7 +176,9 @@
     * この時点では、とりあえずお手本のソースコードを書き写して、「学習」「推論」機能が動く、というのを確認するところまで。
     * 書籍「PythonとKerasによるディープラーニング」の 5章あたりにあるサンプルコードを「写経」することを想定している（が、この時点では本当に何もわからない状態かもしれない。ひょっとすると無駄になるステップかも）。
     * サンプルプログラム：
-      * ・・・
+      * https://github.com/fchollet/deep-learning-with-python-notebooks （書籍「PythonとKerasによるディープラーニング」のサンプルコード）
+        * たとえばこの中の、 https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.2-using-convnets-with-small-datasets.ipynb を実際に試してみる。
+        * この段階では、単なる「写経」的な作業になるが、次の「機械学習の理論の学習」のステップを終えた後、このコードの意味が見えてくるようになる、というのを想定している。
 　
 1. 機械学習の理論の学習
     * 書籍「はじめてのディープラーニング -Pythonで学ぶニューラルネットワークとバックプロパゲーション- (Machine Learning)」を利用。
@@ -222,7 +224,8 @@
 1. Keras を使って、モデル作成（2回目）
     * 機械学習の理論を理解したところで、Kerasライブラリを用いたソースコードの内容も理解しながら、1回目と同じモデルを作成する。
     * サンプルプログラム：
-      * ・・・
+      * 前述の https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.2-using-convnets-with-small-datasets.ipynb で検証。この段階では、コードが「読める」ようになっているはず。
+　  * 書籍「PythonとKerasによるディープラーニング」のサンプルコード（ https://github.com/fchollet/deep-learning-with-python-notebooks ）は、ほかにも良い題材がありそうだ。
 　
 1. 独自のモデル作成
     * Keras を利用。
