@@ -92,6 +92,13 @@
   * バックエンドとして指定できるライブラリは Theano などもあるようだが、Keras + TensorFlow という組み合わせが一般的であるようだ。
   * TensorFlow 単体で利用するよりはハードルは低い。ただそれでも、基本的な機械学習関連の知識は必要となるだろう。
 
+* **Pytorch**
+  * https://pytorch.org/
+  * 参考： https://www.procrasist.com/entry/19-pytorch
+  * Chainer（ https://chainer.org/ ）のフォーク
+  * "Define by Run"
+  * 研究開発界隈では人気上昇中、とのこと。
+
 * **Google Cloud Vision**
   * https://cloud.google.com/vision/?hl=JA
   * これは、学習済みのモデルを利用して、画像解析（指定された画像に何が映っているか、など）を行うことができるライブラリ。
