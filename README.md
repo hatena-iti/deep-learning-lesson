@@ -76,6 +76,9 @@
 * Python
   * ほかの言語でも機械学習関連のライブラリが提供されているものもあるが、やはりそういったライブラリの充実度から見ても Python 一択だろう。
   * Python 言語自体は習熟が容易な部類に入ると思われる。
+  * 基本的には、**Annaconda** （ https://www.anaconda.com/ ）で Python 環境を導入し、インストールされた Annaconda-Navigator から、**jupyter notebook** を使って、コードを実装する、という手順が良いだろう。
+  * Google のサービスである、 **Google Colab** （ https://colab.research.google.com/ ）を利用すると、ブラウザ上で、jupyter notebook と同じようにコード実装が行える。かつ、この Google Colab 上では、GPU も含めて無料で利用できるため、高負荷の学習処理も、短時間で実行できる、とのこと。
+    * ただ、学習データを Google Drive に置かないといけない、となると、（セキュリティの関係から）ITI 社内環境からは利用が難しいのかもしれない。
 
 
 ## 機械学習・ディープラーニング関連のライブラリ
