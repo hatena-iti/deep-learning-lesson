@@ -202,9 +202,9 @@
       * 前述の https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.2-using-convnets-with-small-datasets.ipynb で検証。この段階では、コードが「読める」ようになっているはず。
     * 書籍「PythonとKerasによるディープラーニング」のサンプルコード（ https://github.com/fchollet/deep-learning-with-python-notebooks ）は、ほかにも良い題材がありそうだ。
 　
-1. 独自のモデル作成
+1. XXX モデルを実装
     * Keras を利用。
-    * 独自の要件を設定し、Keras を用いて、学習（モデル作成）と推論の処理を実装してみる。
-    * 最終的にウェブアプリケーションとして実装してみるのがよいだろう。
+    * 前述で実装したのとは異なるモデルを、Keras を用いて実装する。（・・・というステップが、この時点での学習段階として適切なのかどうか？）
+      * 最終的にウェブアプリケーションとして実装してみるのがよいだろう。
     * サンプルプログラム：
       * ・・・
