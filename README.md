@@ -66,6 +66,9 @@
 * https://dev.classmethod.jp/machine-learning/fundamental-matters-to-know-before-learning-machine-learning-and-deep-learning/
   * 「最初の最初」の情報として、簡潔にまとまっている。（ように見える）
 
+* https://tutorials.chainer.org/ja/
+  * "Chainerの入門に最適なチュートリアルサイト。数学の基礎、プログラミング言語 Python の基礎から、機械学習・ディープラーニングの理論の基礎とコーディングまでを幅広く解説します。"
+
 * https://paiza.jp/works/ai_ml/primer/m1-challenge1
   * paiza ラーニングのオンライン講座「Python×AI・機械学習入門編」
   * 2018年12月現在、一部が無料で公開されている。
